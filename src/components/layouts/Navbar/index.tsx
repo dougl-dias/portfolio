@@ -1,6 +1,8 @@
+import useNavbar from './useNavbar'
+
 import { tv } from 'tailwind-variants'
 
-import useNavbar from './useNavbar'
+import { links } from './links'
 
 const link = tv({
   base: 'inline-flex items-center text-sm font-medium py-1.5 px-2 rounded-md text-secondary transition border border-transparent lg:px-4',
@@ -15,7 +17,7 @@ const link = tv({
 })
 
 const Navbar = () => {
-  const { links, active } = useNavbar(110)
+  const { active } = useNavbar(110)
 
   return (
     <nav className='py-2 px-3 bg-body/50 backdrop-blur-xl border border-default rounded-xl'>

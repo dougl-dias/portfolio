@@ -1,83 +1,116 @@
 import { GrGithub, GrLinkedinOption, GrSend } from 'react-icons/gr'
-
 import { BiSolidEnvelope, BiSolidPhone, BiSolidUser } from 'react-icons/bi'
 
+import TitleSection from '../components/layouts/TitleSection'
 import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
-import Divider from '../components/ui/Divider'
 
 const Contact = () => {
   return (
-    <section className='min-h-screen flex items-center justify-center' id='contact'>
-      <div className='flex flex-col items-center'>
-        <div className='max-w-2xl bg-card border border-default rounded-lg py-8 px-6'>
-          <h3 className='text-3xl font-bold text-center text-indigo-500 mb-4'>Entre em contato</h3>
+    <section id='contact'>
+      <div className='max-w-7xl py-20 px-4 mx-auto'>
+        <TitleSection
+          title='Vamos'
+          highlight='trabalhar juntos'
+          description='Tem um projeto em mente ou precisa de uma solução? Entre em contato e vamos conversar.'
+        />
 
-          <p className='text-sm font-semibold text-secondary text-center leading-relaxed md:text-base'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing. Nobis porro saepe totam soluta minus architecto sint
-            minima quasi
-          </p>
+        <div className='grid md:grid-cols-5 gap-10'>
+          <div className='space-y-6 order-2 md:order-1 md:col-span-2'>
+            {/* CARD */}
+            <div className='p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur'>
+              <h3 className='text-primary font-semibold mb-4'>Informações de contato</h3>
 
-          <form>
-            <div className='grid grid-cols-3 gap-4 py-4'>
-              <div className='col-span-full'>
-                <Input.Root>
-                  <Input.Label label='Nome completo' />
-                  <Input.Field>
-                    <Input.Icon icon={BiSolidUser} />
-                    <Input.Control placeholder='Digite seu nome' />
-                  </Input.Field>
-                </Input.Root>
+              <div className='space-y-4 text-sm text-zinc-400'>
+                <div className='flex items-center gap-3'>
+                  <BiSolidEnvelope className='text-violet-400 text-lg' />
+                  seuemail@email.com
+                </div>
+
+                <div className='flex items-center gap-3'>
+                  <BiSolidPhone className='text-violet-400 text-lg' />
+                  (11) 99999-9999
+                </div>
               </div>
-
-              <div className='col-span-full sm:col-span-2'>
-                <Input.Root>
-                  <Input.Label label='E-mail' />
-                  <Input.Field>
-                    <Input.Icon icon={BiSolidEnvelope} />
-                    <Input.Control placeholder='Digite seu e-mail' />
-                  </Input.Field>
-                </Input.Root>
-              </div>
-
-              <div className='col-span-full sm:col-span-1'>
-                <Input.Root>
-                  <Input.Label label='Telefone' />
-                  <Input.Field>
-                    <Input.Icon icon={BiSolidPhone} />
-                    <Input.Control placeholder='(00) 00000-00000' />
-                  </Input.Field>
-                </Input.Root>
-              </div>
-
-              <div className='col-span-full mb-2'>
-                <Input.Root>
-                  <Input.Label label='Mensagem' />
-                  <Input.Field>
-                    <Input.Textarea rows={5} placeholder='Escreva sua a mensagem...' />
-                  </Input.Field>
-                </Input.Root>
-              </div>
-
-              <Button className='col-span-full' color='primary' icon={GrSend}>
-                Enviar
-              </Button>
             </div>
-          </form>
 
-          <Divider label='Redes sociais' />
+            {/* SOCIAL */}
+            <div className='p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur'>
+              <h3 className='text-primary font-semibold mb-4'>Redes</h3>
 
-          <div className='flex flex-wrap gap-3 py-4'>
-            <Button className='w-full' variant='outline' color='info' icon={GrLinkedinOption}>
-              <a href='https://www.linkedin.com/in/dougl-dias/' target='_blank'>
-                Linked-In
-              </a>
-            </Button>
-            <Button className='w-full' variant='outline' color='white' icon={GrGithub}>
-              <a href='https://github.com/dougl-dias/' target='_blank'>
-                GitHub
-              </a>
-            </Button>
+              <div className='flex flex-col gap-3'>
+                <Button
+                  variant='outline'
+                  color='info'
+                  icon={GrLinkedinOption}
+                  onClick={() =>
+                    window.open('https://www.linkedin.com/in/dougl-dias/', '_blank', 'noopener,noreferrer')
+                  }
+                >
+                  LinkedIn
+                </Button>
+
+                <Button
+                  variant='outline'
+                  color='white'
+                  icon={GrGithub}
+                  onClick={() => window.open('https://github.com/dougl-dias/', '_blank', 'noopener,noreferrer')}
+                >
+                  GitHub
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className='p-8 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur overflow-hidden order-1 sm:order-2 md:col-span-3'>
+            <h3 className='text-primary text-xl font-semibold mb-6'>Envie uma mensagem</h3>
+
+            <form>
+              <div className='grid grid-cols-3 gap-4'>
+                <div className='col-span-full'>
+                  <Input.Root>
+                    <Input.Label label='Nome completo' />
+                    <Input.Field>
+                      <Input.Icon icon={BiSolidUser} />
+                      <Input.Control placeholder='Digite seu nome' />
+                    </Input.Field>
+                  </Input.Root>
+                </div>
+
+                <div className='col-span-full lg:col-span-2'>
+                  <Input.Root>
+                    <Input.Label label='E-mail' />
+                    <Input.Field>
+                      <Input.Icon icon={BiSolidEnvelope} />
+                      <Input.Control placeholder='Digite seu e-mail' />
+                    </Input.Field>
+                  </Input.Root>
+                </div>
+
+                <div className='col-span-full lg:col-span-1'>
+                  <Input.Root>
+                    <Input.Label label='Telefone' />
+                    <Input.Field>
+                      <Input.Icon icon={BiSolidPhone} />
+                      <Input.Control placeholder='(00) 00000-0000' />
+                    </Input.Field>
+                  </Input.Root>
+                </div>
+
+                <div className='col-span-full'>
+                  <Input.Root>
+                    <Input.Label label='Mensagem' />
+                    <Input.Field>
+                      <Input.Textarea rows={5} placeholder='Escreva sua mensagem...' />
+                    </Input.Field>
+                  </Input.Root>
+                </div>
+
+                <Button className='col-span-full mt-2' color='primary' icon={GrSend}>
+                  Enviar mensagem
+                </Button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

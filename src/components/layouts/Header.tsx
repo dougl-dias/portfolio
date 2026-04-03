@@ -9,8 +9,10 @@ const Header = () => {
   return (
     <>
       <header className='fixed top-0 z-50 w-full py-2 px-3 bg-body border-b border-default sm:border-none sm:bg-transparent'>
-        <div className='flex items-center justify-between container py-2 px-3 mx-auto lg:px-16'>
-          <h1 className='text-primary font-bold'>Dougl-Dias</h1>
+        <div className='flex items-center justify-between max-w-7xl mx-auto py-2'>
+          <a href='/' className='text-primary font-bold'>
+            Dougl-Dias
+          </a>
 
           {showThemeButton && <Navbar />}
 

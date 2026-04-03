@@ -14,17 +14,15 @@ import './styles/index.css'
 const App = () => {
   return (
     <AppProvider>
-      <div className='min-h-screen bg-body'>
+      <div className='min-h-screen'>
         <Header />
 
-        <main className='p-4 flex-1'>
-          <div className='container mx-auto'>
-            <Home />
-            <Project />
-            <Skills />
-            <About />
-            <Contact />
-          </div>
+        <main className='relative z-10 flex-1'>
+          <Home />
+          <Project />
+          <Skills />
+          <About />
+          <Contact />
         </main>
 
         <Footer />
