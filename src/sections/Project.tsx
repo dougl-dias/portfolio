@@ -8,7 +8,7 @@ import { projects } from '../data/projects'
 const Projects = () => {
   return (
     <Section id='projects'>
-      <div className='absolute -top-32 w-full h-32 bg-gradient-to-t from-body'></div>
+      <div className='absolute -top-72 w-full h-72 bg-gradient-to-t from-body'></div>
 
       <div className='max-w-7xl mx-auto py-20 px-4'>
         <TitleSection

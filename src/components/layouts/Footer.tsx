@@ -47,7 +47,7 @@ const socialIcon = tv({
 
 const Footer = () => {
   return (
-    <footer className='pt-12 pb-24 border-t border-default sm:pb-16'>
+    <footer className='pt-12 pb-24 bg-body border-t border-default sm:pb-16'>
       <div className='flex flex-col items-center p-4 gap-8'>
         <h2 className='text-3xl font-bold text-primary'>Dougl-dias</h2>
 
@@ -74,7 +74,9 @@ const Footer = () => {
           ))}
         </ul>
 
-        <p className='text-center text-secondary'>© {new Date().getFullYear()} Douglas Dias. All rights reserved.</p>
+        <p className='text-center text-secondary'>
+          © {new Date().getFullYear()} <span className='text-primary'>Douglas Dias</span>. All rights reserved.
+        </p>
       </div>
     </footer>
   )

@@ -4,10 +4,11 @@ import { BiSolidEnvelope, BiSolidPhone, BiSolidUser } from 'react-icons/bi'
 import TitleSection from '../components/layouts/TitleSection'
 import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
+import Section from '../components/layouts/Section'
 
 const Contact = () => {
   return (
-    <section id='contact'>
+    <Section id='contact'>
       <div className='max-w-7xl py-20 px-4 mx-auto'>
         <TitleSection
           title='Vamos'
@@ -17,25 +18,23 @@ const Contact = () => {
 
         <div className='grid md:grid-cols-5 gap-10'>
           <div className='space-y-6 order-2 md:order-1 md:col-span-2'>
-            {/* CARD */}
-            <div className='p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur'>
+            <div className='p-6 rounded-xl bg-card/60 border border-default backdrop-blur'>
               <h3 className='text-primary font-semibold mb-4'>Informações de contato</h3>
 
               <div className='space-y-4 text-sm text-zinc-400'>
                 <div className='flex items-center gap-3'>
                   <BiSolidEnvelope className='text-violet-400 text-lg' />
-                  seuemail@email.com
+                  douglas18.76.80@email.com
                 </div>
 
                 <div className='flex items-center gap-3'>
                   <BiSolidPhone className='text-violet-400 text-lg' />
-                  (11) 99999-9999
+                  (11) 97615-3758
                 </div>
               </div>
             </div>
 
-            {/* SOCIAL */}
-            <div className='p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur'>
+            <div className='p-6 rounded-xl bg-card/60 border border-default backdrop-blur'>
               <h3 className='text-primary font-semibold mb-4'>Redes</h3>
 
               <div className='flex flex-col gap-3'>
@@ -62,7 +61,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className='p-8 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur overflow-hidden order-1 sm:order-2 md:col-span-3'>
+          <div className='p-8 rounded-xl bg-card/60 border border-default backdrop-blur overflow-hidden order-1 sm:order-2 md:col-span-3'>
             <h3 className='text-primary text-xl font-semibold mb-6'>Envie uma mensagem</h3>
 
             <form>
@@ -114,7 +113,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

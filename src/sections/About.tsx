@@ -16,7 +16,7 @@ const About = () => {
           />
 
           <div className='grid lg:grid-cols-2 gap-12 items-center'>
-            <div className='space-y-6 text-zinc-300 leading-relaxed'>
+            <div className='space-y-6 text-primary leading-relaxed'>
               <p>
                 Sou desenvolvedor full stack com foco em criar soluções digitais eficientes, escaláveis e bem
                 estruturadas. Tenho experiência tanto no frontend quanto no backend, construindo aplicações completas do
@@ -35,7 +35,7 @@ const About = () => {
             </div>
 
             <div className='grid sm:grid-cols-2 gap-6'>
-              <div className='group relative p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur overflow-hidden transition hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.4)]'>
+              <div className='group relative p-6 rounded-xl bg-card/60 border border-default backdrop-blur overflow-hidden transition hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.4)]'>
                 <div className='absolute inset-0 opacity-0 group-hover:opacity-100 transition'>
                   <div className='absolute -inset-1 bg-gradient-to-r from-violet-500/10 via-transparent to-violet-500/10 blur-xl' />
                 </div>
@@ -51,7 +51,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className='group relative p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur overflow-hidden transition hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.4)]'>
+              <div className='group relative p-6 rounded-xl bg-card/60 border border-default backdrop-blur overflow-hidden transition hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.4)]'>
                 <div className='absolute inset-0 opacity-0 group-hover:opacity-100 transition'>
                   <div className='absolute -inset-1 bg-gradient-to-r from-violet-500/10 via-transparent to-violet-500/10 blur-xl' />
                 </div>
@@ -67,7 +67,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className='group relative p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 backdrop-blur overflow-hidden transition hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.4)] sm:col-span-2'>
+              <div className='group relative p-6 rounded-xl bg-card/60 border border-default backdrop-blur overflow-hidden transition hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.4)] sm:col-span-2'>
                 <div className='absolute inset-0 opacity-0 group-hover:opacity-100 transition'>
                   <div className='absolute -inset-1 bg-gradient-to-r from-violet-500/10 via-transparent to-violet-500/10 blur-xl' />
                 </div>
