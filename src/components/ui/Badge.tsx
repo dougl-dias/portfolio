@@ -14,17 +14,17 @@ const badge = tv({
       warning: 'bg-amber-400/25 ring-amber-700 text-primary',
       danger: 'bg-red-600/25 ring-red-700 text-primary',
       neutral: 'bg-neutral-600/25 ring-neutral-700 text-primary',
-      white: 'bg-zinc-100/25 ring-zinc-700 text-zinc-800',
+      white: 'bg-zinc-100/25 ring-zinc-700 text-zinc-800'
     },
     pill: {
       true: 'rounded-full',
-      false: 'rounded-md',
-    },
+      false: 'rounded-md'
+    }
   },
   defaultVariants: {
     color: 'primary',
-    pill: false,
-  },
+    pill: false
+  }
 })
 
 type BadgeVariants = VariantProps<typeof badge>

@@ -1,7 +1,20 @@
 import type { IconType } from 'react-icons'
 
-const InputIcon = ({ icon: Icon }: { icon: IconType }) => {
-  return <div className='shrink-0 text-base text-gray-400 select-none sm:text-sm/6'>{Icon && <Icon size={20} />}</div>
+import { twMerge } from 'tailwind-merge'
+
+interface InputIconProps {
+  icon: IconType
+  className?: string
+}
+
+const InputIcon = ({ className, icon: Icon }: InputIconProps) => {
+  return (
+    Icon && (
+      <div className={twMerge('shrink-0 text-base text-gray-400 select-none sm:text-sm/6', className)}>
+        <Icon size={20} />
+      </div>
+    )
+  )
 }
 
 export default InputIcon

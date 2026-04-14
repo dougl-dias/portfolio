@@ -11,7 +11,7 @@ const Home = () => {
       <div className='relative min-h-dvh flex justify-center items-center px-4'>
         <AnimatedBackground />
 
-        <div className='text-center max-w-3xl'>
+        <div className='relative z-20 text-center max-w-3xl'>
           <Badge pill className='mb-4'>
             Disponível para Freelance & Projetos
           </Badge>

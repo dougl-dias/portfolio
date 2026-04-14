@@ -36,7 +36,7 @@ const useNavbar = (offset: number) => {
   }, [offset])
 
   return {
-    active,
+    active
   }
 }
 

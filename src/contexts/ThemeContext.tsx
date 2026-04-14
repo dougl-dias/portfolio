@@ -1,44 +1,8 @@
 import { createContext, useEffect, useState } from 'react'
 
-import type { IconType } from 'react-icons'
-import { MdOutlineDarkMode, MdOutlineLightMode, MdOutlineMonitor } from 'react-icons/md'
+import { themes, type ThemeContextProps, type ThemeValue } from '../constants/themes'
 
-type ThemeText = 'Claro' | 'Escuro' | 'Sistema'
-type ThemeValue = 'dark' | 'light' | 'system'
-
-interface ThemeProps {
-  icon: IconType
-  text: ThemeText
-  value: ThemeValue
-}
-
-interface ThemeContextProps {
-  dropdown: boolean
-  themes: ThemeProps[]
-  currentTheme: ThemeProps
-  toggleDropdown: () => void
-  handleToggleTheme: (value: ThemeValue) => void
-}
-
-const ThemeContext = createContext({} as ThemeContextProps)
-
-const themes = [
-  {
-    icon: MdOutlineLightMode,
-    text: 'Claro',
-    value: 'light',
-  },
-  {
-    icon: MdOutlineDarkMode,
-    text: 'Escuro',
-    value: 'dark',
-  },
-  {
-    icon: MdOutlineMonitor,
-    text: 'Sistema',
-    value: 'system',
-  },
-] satisfies ThemeProps[]
+const ThemeContext = createContext<ThemeContextProps | null>(null)
 
 const resolvedTheme = (value: ThemeValue): 'dark' | 'light' => {
   if (value === 'system') {
@@ -79,19 +43,15 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     throw new Error('Invalid theme')
   }
 
-  return (
-    <ThemeContext.Provider
-      value={{
-        dropdown,
-        themes,
-        currentTheme,
-        toggleDropdown,
-        handleToggleTheme,
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
-  )
+  const values = {
+    dropdown,
+    themes,
+    currentTheme,
+    toggleDropdown,
+    handleToggleTheme
+  }
+
+  return <ThemeContext.Provider value={values}>{children}</ThemeContext.Provider>
 }
 
 export { ThemeContext, ThemeProvider }

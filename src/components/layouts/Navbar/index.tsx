@@ -2,18 +2,18 @@ import useNavbar from './useNavbar'
 
 import { tv } from 'tailwind-variants'
 
-import { links } from './links'
+import { links } from '../../../constants/links'
 
 const link = tv({
   base: 'inline-flex items-center text-sm font-medium py-1.5 px-2 rounded-md text-secondary transition border border-transparent lg:px-4',
   variants: {
     active: {
-      true: 'bg-card border-default text-primary font-bold',
-    },
+      true: 'bg-card border-default text-primary font-bold'
+    }
   },
   defaultVariants: {
-    active: false,
-  },
+    active: false
+  }
 })
 
 const Navbar = () => {

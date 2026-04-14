@@ -12,5 +12,5 @@ export const links = [
   { to: 'projects', icon: HiFolder, text: 'Projetos' },
   { to: 'skills', icon: HiLightBulb, text: 'Habilidades' },
   { to: 'about', icon: HiUser, text: 'Sobre' },
-  { to: 'contact', icon: HiEnvelope, text: 'Contato' },
+  { to: 'contact', icon: HiEnvelope, text: 'Contato' }
 ] as LinkProps[]

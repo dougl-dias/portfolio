@@ -1,6 +1,15 @@
-const InputField = ({ children }: { children: React.ReactNode }) => {
+import type { ComponentProps } from 'react'
+
+import { twMerge } from 'tailwind-merge'
+
+const InputField = ({ className, children }: ComponentProps<'div'>) => {
   return (
-    <div className='flex items-center gap-2 rounded-md bg-white/5 pl-3 outline-1 -outline-offset-1 outline-white/10 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-500'>
+    <div
+      className={twMerge(
+        'flex items-center gap-2 rounded-md bg-white/5 pl-3 ring-1 ring-zinc-50/15 focus-within:ring-violet-600 transition',
+        className
+      )}
+    >
       {children}
     </div>
   )

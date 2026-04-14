@@ -1,35 +1,7 @@
 import { tv } from 'tailwind-variants'
 
-import type { IconType } from 'react-icons'
-import { GrGithub, GrInstagram, GrLinkedinOption } from 'react-icons/gr'
-
-import { links } from './Navbar/links'
-
-type SocialType = 'instagram' | 'linkedIn' | 'github'
-
-interface SocialIcon {
-  type: SocialType
-  href: string
-  icon: IconType
-}
-
-const socialIcons: SocialIcon[] = [
-  {
-    type: 'instagram',
-    href: 'https://www.instagram.com/dougl_dias/',
-    icon: GrInstagram,
-  },
-  {
-    type: 'linkedIn',
-    href: 'https://www.linkedin.com/in/dougl-dias/',
-    icon: GrLinkedinOption,
-  },
-  {
-    type: 'github',
-    href: 'https://github.com/dougl-dias/',
-    icon: GrGithub,
-  },
-]
+import { links } from '../../constants/links'
+import { socialIcons } from '../../constants/footer'
 
 const socialIcon = tv({
   base: 'w-10 h-10 inline-flex items-center justify-center rounded-xl border border-zinc-700 text-zinc-400 backdrop-blur-sm bg-zinc-900/40 transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg focus-visible:outline-none focus-visible:scale-110 focus-visible:shadow-lg',
@@ -40,9 +12,9 @@ const socialIcon = tv({
       linkedIn:
         'hover:bg-sky-500/20 hover:border-sky-500 hover:text-sky-400 focus-visible:bg-sky-500/20 focus-visible:border-sky-500 focus-visible:text-sky-400',
       github:
-        ' hover:bg-zinc-500/20 hover:border-zinc-400 hover:text-white focus-visible:bg-zinc-500/20 focus-visible:border-zinc-400 focus-visible:text-white',
-    },
-  },
+        'hover:bg-zinc-500/20 hover:border-zinc-400 hover:text-white focus-visible:bg-zinc-500/20 focus-visible:border-zinc-400 focus-visible:text-white'
+    }
+  }
 })
 
 const Footer = () => {
@@ -52,16 +24,20 @@ const Footer = () => {
         <h2 className='text-3xl font-bold text-primary'>Dougl-dias</h2>
 
         <ul className='flex flex-col items-center gap-2 sm:flex-row'>
-          {links.map(({ to, text }) => (
-            <li key={to}>
-              <a
-                href={`#${to}`}
-                className='text-secondary outline-none p-2 hover:text-primary focus-visible:text-primary'
-              >
-                {text}
-              </a>
-            </li>
-          ))}
+          {links.map(({ to, text }) => {
+            const href = `#${to}`
+
+            return (
+              <li key={to}>
+                <a
+                  href={href}
+                  className='text-secondary outline-none p-2 transition hover:text-primary focus-visible:text-primary'
+                >
+                  {text}
+                </a>
+              </li>
+            )
+          })}
         </ul>
 
         <ul className='flex items-center gap-4'>

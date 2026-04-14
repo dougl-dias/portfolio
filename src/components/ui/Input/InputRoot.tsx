@@ -1,5 +1,19 @@
-const InputRoot = ({ children }: { children: React.ReactNode }) => {
-  return <div className='col-span-full'>{children}</div>
+import { createContext, useId } from 'react'
+
+interface InputContextProps {
+  id: string
 }
 
-export default InputRoot
+const InputContext = createContext<InputContextProps | null>(null)
+
+const InputRoot = ({ children }: { children: React.ReactNode }) => {
+  const id = useId()
+
+  return (
+    <InputContext.Provider value={{ id }}>
+      <div className='col-span-full'>{children}</div>
+    </InputContext.Provider>
+  )
+}
+
+export { InputContext, InputRoot }

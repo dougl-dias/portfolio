@@ -1,9 +1,11 @@
+import { InputRoot } from './InputRoot'
+
 import InputControl from './InputControl'
 import InputField from './InputField'
 import InputIcon from './InputIcon'
 import InputLabel from './InputLabel'
-import InputRoot from './InputRoot'
 import InputTextarea from './InputTextarea'
+import InputMaskedControl from './Input.MaskedControl'
 
 const Input = {
   Root: InputRoot,
@@ -11,7 +13,8 @@ const Input = {
   Field: InputField,
   Icon: InputIcon,
   Control: InputControl,
-  Textarea: InputTextarea,
+  MaskedControl: InputMaskedControl,
+  Textarea: InputTextarea
 }
 
 export default Input

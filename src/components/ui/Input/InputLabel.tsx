@@ -1,13 +1,15 @@
+import { useInput } from '../../../hooks/useInput'
+
 import type { ComponentProps } from 'react'
 
-interface InputLabelProps extends ComponentProps<'label'> {
-  label: string
-}
+import { twMerge } from 'tailwind-merge'
 
-const InputLabel = ({ label, htmlFor, ...props }: InputLabelProps) => {
+const InputLabel = ({ className, children, ...props }: ComponentProps<'label'>) => {
+  const { id } = useInput()
+
   return (
-    <label htmlFor={htmlFor} className='block text-sm/6 font-medium text-white mb-1.5' {...props}>
-      {label}
+    <label htmlFor={id} className={twMerge('block text-sm/6 font-medium text-white mb-1.5', className)} {...props}>
+      {children}
     </label>
   )
 }
