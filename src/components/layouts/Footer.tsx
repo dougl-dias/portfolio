@@ -4,7 +4,7 @@ import { links } from '../../constants/links'
 import { socialIcons } from '../../constants/footer'
 
 const socialIcon = tv({
-  base: 'w-10 h-10 inline-flex items-center justify-center rounded-xl border border-zinc-700 text-zinc-400 backdrop-blur-sm bg-zinc-900/40 transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg focus-visible:outline-none focus-visible:scale-110 focus-visible:shadow-lg',
+  base: 'w-10 h-10 inline-flex items-center justify-center rounded-xl border border-default text-secondary backdrop-blur-sm bg-card transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg focus-visible:outline-none focus-visible:scale-110 focus-visible:shadow-lg',
   variants: {
     type: {
       instagram:
@@ -19,7 +19,7 @@ const socialIcon = tv({
 
 const Footer = () => {
   return (
-    <footer className='pt-12 pb-24 bg-body border-t border-default sm:pb-16'>
+    <footer className='pt-12 pb-24 bg-base border-t border-default sm:pb-16'>
       <div className='flex flex-col items-center p-4 gap-8'>
         <h2 className='text-3xl font-bold text-primary'>Dougl-dias</h2>
 

@@ -6,7 +6,7 @@ const InputField = ({ className, children }: ComponentProps<'div'>) => {
   return (
     <div
       className={twMerge(
-        'flex items-center gap-2 rounded-md bg-white/5 pl-3 ring-1 ring-zinc-50/15 focus-within:ring-violet-600 transition',
+        'flex items-center gap-2 rounded-md bg-white/5 pl-3 ring-1 ring-ring/15 focus-within:ring-violet-600 transition',
         className
       )}
     >

@@ -6,7 +6,7 @@ const CardRoot = ({ className, children, ...props }: ComponentProps<'div'>) => {
   return (
     <div
       className={twMerge(
-        'group relative p-6 rounded-2xl bg-gradient-to-b from-zinc-900/80 to-zinc-900/40 border border-zinc-800 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_15px_40px_-10px_rgba(139,92,246,0.5)]',
+        'group relative p-6 rounded-2xl bg-gradient-to-b from-card/80 to-card/40 border border-default overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-[0_15px_40px_-10px_rgba(139,92,246,0.5)]',
         className
       )}
       {...props}

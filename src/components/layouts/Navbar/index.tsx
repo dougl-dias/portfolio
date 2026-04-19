@@ -20,7 +20,7 @@ const Navbar = () => {
   const { active } = useNavbar(110)
 
   return (
-    <nav className='py-2 px-3 bg-body/50 backdrop-blur-xl border border-default rounded-xl'>
+    <nav className='py-2 px-3 bg-base/50 backdrop-blur-xl border border-default rounded-xl'>
       <ul className='flex items-center justify-center gap-2 sm:gap-1.5'>
         {links.map(({ to, text, icon: Icon }) => (
           <li key={to}>

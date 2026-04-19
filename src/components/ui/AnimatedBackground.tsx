@@ -1,6 +1,6 @@
 const AnimatedBackground = () => {
   return (
-    <div className='absolute inset-0 -z-10 overflow-hidden bg-body'>
+    <div className='absolute inset-0 -z-10 overflow-hidden bg-base'>
       <div className='absolute w-[500px] h-[500px] bg-purple-600/40 rounded-full blur-[120px] top-[10%] left-[20%] animate-blob' />
 
       <div className='absolute w-[500px] h-[500px] bg-pink-500/40 rounded-full blur-[120px] top-[50%] left-[60%] animate-blob animation-delay-2000' />

@@ -4,6 +4,7 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiGit,
+  SiGithub,
   SiTailwindcss,
   SiJavascript,
   SiExpress,
@@ -24,9 +25,21 @@ export const tabs = [
       {
         title: 'Core',
         items: [
-          { name: 'React', icon: SiReact, level: 'Avançado', description: 'Interfaces dinâmicas e componentizadas.' },
-          { name: 'TypeScript', icon: SiTypescript, level: 'Avançado', description: 'Tipagem segura e escalável.' },
-          { name: 'JavaScript', icon: SiJavascript, level: 'Avançado', description: 'Base do desenvolvimento web.' }
+          {
+            name: 'React',
+            icon: SiReact,
+            description: 'Interfaces dinâmicas e componentizadas.'
+          },
+          {
+            name: 'TypeScript',
+            icon: SiTypescript,
+            description: 'Tipagem segura e escalável.'
+          },
+          {
+            name: 'JavaScript',
+            icon: SiJavascript,
+            description: 'Base do desenvolvimento web.'
+          }
         ]
       },
       {
@@ -35,12 +48,23 @@ export const tabs = [
           {
             name: 'TailwindCSS',
             icon: SiTailwindcss,
-            level: 'Avançado',
             description: 'Estilização moderna e produtiva.'
           },
-          { name: 'Sass', icon: SiSass, level: 'Intermediário', description: 'CSS modular e reutilizável.' },
-          { name: 'CSS3', icon: SiCss, level: 'Avançado', description: 'Layouts responsivos e animações.' },
-          { name: 'HTML5', icon: SiHtml5, level: 'Avançado', description: 'Estrutura semântica.' }
+          {
+            name: 'Sass',
+            icon: SiSass,
+            description: 'CSS modular e reutilizável.'
+          },
+          {
+            name: 'CSS3',
+            icon: SiCss,
+            description: 'Layouts responsivos e animações.'
+          },
+          {
+            name: 'HTML5',
+            icon: SiHtml5,
+            description: 'Estrutura semântica.'
+          }
         ]
       }
     ]
@@ -52,17 +76,41 @@ export const tabs = [
       {
         title: 'Core',
         items: [
-          { name: 'Node.js', icon: SiNodedotjs, level: 'Avançado', description: 'Backend em JavaScript.' },
-          { name: 'TypeScript', icon: SiTypescript, level: 'Avançado', description: 'Código seguro.' },
-          { name: 'JavaScript', icon: SiJavascript, level: 'Avançado', description: 'Base do Node.' }
+          {
+            name: 'Node.js',
+            icon: SiNodedotjs,
+            description: 'Backend em JavaScript.'
+          },
+          {
+            name: 'TypeScript',
+            icon: SiTypescript,
+            description: 'Código seguro.'
+          },
+          {
+            name: 'JavaScript',
+            icon: SiJavascript,
+            description: 'Base do Node.'
+          }
         ]
       },
       {
         title: 'Ferramentas',
         items: [
-          { name: 'Express', icon: SiExpress, level: 'Avançado', description: 'Criação de APIs REST.' },
-          { name: 'Prisma', icon: SiPrisma, level: 'Intermediário', description: 'ORM moderno.' },
-          { name: 'Zod', icon: SiZod, level: 'Intermediário', description: 'Validação de dados.' }
+          {
+            name: 'Express',
+            icon: SiExpress,
+            description: 'Criação de APIs REST.'
+          },
+          {
+            name: 'Prisma',
+            icon: SiPrisma,
+            description: 'ORM moderno.'
+          },
+          {
+            name: 'Zod',
+            icon: SiZod,
+            description: 'Validação de dados.'
+          }
         ]
       }
     ]
@@ -74,8 +122,16 @@ export const tabs = [
       {
         title: 'Databases',
         items: [
-          { name: 'PostgreSQL', icon: SiPostgresql, level: 'Avançado', description: 'Banco principal.' },
-          { name: 'MySQL', icon: SiMysql, level: 'Intermediário', description: 'Banco relacional.' }
+          {
+            name: 'PostgreSQL',
+            icon: SiPostgresql,
+            description: 'Banco principal.'
+          },
+          {
+            name: 'MySQL',
+            icon: SiMysql,
+            description: 'Banco relacional.'
+          }
         ]
       }
     ]
@@ -86,11 +142,28 @@ export const tabs = [
     groups: [
       {
         title: 'Ferramentas',
-        items: [{ name: 'Git', icon: SiGit, level: 'Avançado', description: 'Versionamento e colaboração.' }]
+        items: [
+          {
+            name: 'Git',
+            icon: SiGit,
+            description: 'Versionamento e colaboração.'
+          },
+          {
+            name: 'GitHub',
+            icon: SiGithub,
+            description: 'Versionamento e colaboração.'
+          }
+        ]
       },
       {
         title: 'Experiência',
-        items: [{ name: 'PHP', icon: SiPhp, level: 'Intermediário', description: 'Sistemas legados.' }]
+        items: [
+          {
+            name: 'PHP',
+            icon: SiPhp,
+            description: 'Sistemas legados.'
+          }
+        ]
       }
     ]
   }

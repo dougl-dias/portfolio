@@ -66,19 +66,6 @@ const Skills = () => {
 
                             <h3 className='text-base font-semibold text-zinc-100'>{skill.name}</h3>
                           </div>
-
-                          <span
-                            className={`
-                                  text-[10px] px-2 py-1 rounded-md
-                                  ${
-                                    skill.level === 'Avançado'
-                                      ? 'bg-violet-500/10 text-violet-400'
-                                      : 'bg-zinc-800 text-zinc-400'
-                                  }
-                                `}
-                          >
-                            {skill.level}
-                          </span>
                         </div>
 
                         <p className='text-sm text-zinc-400 leading-relaxed'>{skill.description}</p>

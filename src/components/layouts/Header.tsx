@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='fixed top-0 z-50 w-full py-2 px-3 bg-body border-b border-default sm:border-none sm:bg-transparent'>
+      <header className='fixed top-0 z-50 w-full py-2 px-3 bg-base border-b border-default sm:border-none sm:bg-transparent'>
         <div className='absolute top-0 left-0 w-full h-[3px] z-50'>
           <div
             className='w-full h-full bg-gradient-to-r from-violet-300 to-violet-800 rounded-full origin-left'
