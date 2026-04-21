@@ -2,14 +2,13 @@ import Section from '../components/layouts/Section'
 import TitleSection from '../components/layouts/TitleSection'
 
 import Card from '../components/ui/Card'
-import Divider from '../components/ui/Divider'
 
 import { projects } from '../constants/projects'
 
 const Projects = () => {
   return (
     <Section id='projects'>
-      <Divider animated />
+      <div className='absolute -top-80 left-0 z-10 w-full h-80 bg-gradient-to-t from-base'></div>
 
       <TitleSection
         title='Projetos'

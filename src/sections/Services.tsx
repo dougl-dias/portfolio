@@ -8,8 +8,6 @@ import { services } from '../constants/services'
 const Services = () => {
   return (
     <Section id='services'>
-      <div className='absolute -top-60 left-0 z-10 w-full h-60 bg-gradient-to-t from-body'></div>
-
       <TitleSection
         title='Meus'
         highlight='Serviços'

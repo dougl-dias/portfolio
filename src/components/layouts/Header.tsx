@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='fixed top-0 z-50 w-full py-2 px-3 bg-base border-b border-default sm:border-none sm:bg-transparent'>
+      <header className='fixed top-0 z-50 w-full py-2 px-3 bg-base/50 backdrop-blur-xl border-b border-default sm:backdrop-blur-xl'>
         <div className='absolute top-0 left-0 w-full h-[3px] z-50'>
           <div
             className='w-full h-full bg-gradient-to-r from-violet-300 to-violet-800 rounded-full origin-left'
@@ -35,7 +35,7 @@ const Header = () => {
           ></div>
         </div>
 
-        <div className='flex items-center justify-between max-w-7xl mx-auto py-2'>
+        <div className='flex items-center justify-between max-w-7xl mx-auto'>
           <a href='/' className='text-primary font-bold'>
             Dougl-Dias
           </a>

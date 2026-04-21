@@ -21,8 +21,8 @@ const App = () => {
 
         <main className='relative z-10 flex-1'>
           <Home />
-          <Services />
           <Project />
+          <Services />
           <Skills />
           <About />
           <CTA />
