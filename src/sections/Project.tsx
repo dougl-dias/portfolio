@@ -4,6 +4,7 @@ import TitleSection from '../components/layouts/TitleSection'
 import Card from '../components/ui/Card'
 
 import { projects } from '../constants/projects'
+import Services from './Services'
 
 const Projects = () => {
   return (
@@ -16,7 +17,7 @@ const Projects = () => {
         description='Alguns projetos que desenvolvi com foco em performance, escalabilidade e experiência do usuário.'
       />
 
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20'>
         {projects.map(({ title, description, techs }, index) => (
           <Card.Root key={index}>
             <Card.Title>{title}</Card.Title>
@@ -35,6 +36,8 @@ const Projects = () => {
           </Card.Root>
         ))}
       </div>
+
+      <Services />
     </Section>
   )
 }

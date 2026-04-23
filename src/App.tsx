@@ -4,7 +4,6 @@ import Home from './sections/Home'
 import Project from './sections/Project'
 import Skills from './sections/Skills'
 import About from './sections/About'
-import Services from './sections/Services'
 import CTA from './sections/CTA'
 import Contact from './sections/Contact'
 
@@ -22,7 +21,6 @@ const App = () => {
         <main className='relative z-10 flex-1'>
           <Home />
           <Project />
-          <Services />
           <Skills />
           <About />
           <CTA />

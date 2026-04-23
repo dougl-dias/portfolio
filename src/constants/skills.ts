@@ -18,153 +18,81 @@ import {
 } from 'react-icons/si'
 
 export const tabs = [
+  // Frontend
   {
-    label: 'Frontend',
-    description: 'Interfaces modernas, responsivas e focadas na experiência do usuário.',
-    groups: [
-      {
-        title: 'Core',
-        items: [
-          {
-            name: 'React',
-            icon: SiReact,
-            description: 'Interfaces dinâmicas e componentizadas.'
-          },
-          {
-            name: 'TypeScript',
-            icon: SiTypescript,
-            description: 'Tipagem segura e escalável.'
-          },
-          {
-            name: 'JavaScript',
-            icon: SiJavascript,
-            description: 'Base do desenvolvimento web.'
-          }
-        ]
-      },
-      {
-        title: 'Estilização',
-        items: [
-          {
-            name: 'TailwindCSS',
-            icon: SiTailwindcss,
-            description: 'Estilização moderna e produtiva.'
-          },
-          {
-            name: 'Sass',
-            icon: SiSass,
-            description: 'CSS modular e reutilizável.'
-          },
-          {
-            name: 'CSS3',
-            icon: SiCss,
-            description: 'Layouts responsivos e animações.'
-          },
-          {
-            name: 'HTML5',
-            icon: SiHtml5,
-            description: 'Estrutura semântica.'
-          }
-        ]
-      }
-    ]
+    skill: 'HTML5',
+    icon: SiHtml5
   },
   {
-    label: 'Backend',
-    description: 'APIs escaláveis com foco em organização e performance.',
-    groups: [
-      {
-        title: 'Core',
-        items: [
-          {
-            name: 'Node.js',
-            icon: SiNodedotjs,
-            description: 'Backend em JavaScript.'
-          },
-          {
-            name: 'TypeScript',
-            icon: SiTypescript,
-            description: 'Código seguro.'
-          },
-          {
-            name: 'JavaScript',
-            icon: SiJavascript,
-            description: 'Base do Node.'
-          }
-        ]
-      },
-      {
-        title: 'Ferramentas',
-        items: [
-          {
-            name: 'Express',
-            icon: SiExpress,
-            description: 'Criação de APIs REST.'
-          },
-          {
-            name: 'Prisma',
-            icon: SiPrisma,
-            description: 'ORM moderno.'
-          },
-          {
-            name: 'Zod',
-            icon: SiZod,
-            description: 'Validação de dados.'
-          }
-        ]
-      }
-    ]
+    skill: 'CSS3',
+    icon: SiCss
   },
   {
-    label: 'Banco de Dados',
-    description: 'Modelagem e integração com bancos relacionais.',
-    groups: [
-      {
-        title: 'Databases',
-        items: [
-          {
-            name: 'PostgreSQL',
-            icon: SiPostgresql,
-            description: 'Banco principal.'
-          },
-          {
-            name: 'MySQL',
-            icon: SiMysql,
-            description: 'Banco relacional.'
-          }
-        ]
-      }
-    ]
+    skill: 'Sass',
+    icon: SiSass
   },
   {
-    label: 'Outros',
-    description: 'Tecnologias e ferramentas complementares.',
-    groups: [
-      {
-        title: 'Ferramentas',
-        items: [
-          {
-            name: 'Git',
-            icon: SiGit,
-            description: 'Versionamento e colaboração.'
-          },
-          {
-            name: 'GitHub',
-            icon: SiGithub,
-            description: 'Versionamento e colaboração.'
-          }
-        ]
-      },
-      {
-        title: 'Experiência',
-        items: [
-          {
-            name: 'PHP',
-            icon: SiPhp,
-            description: 'Sistemas legados.'
-          }
-        ]
-      }
-    ]
+    skill: 'TailwindCSS',
+    icon: SiTailwindcss
+  },
+
+  // Linguagens
+  {
+    skill: 'JavaScript',
+    icon: SiJavascript
+  },
+  {
+    skill: 'TypeScript',
+    icon: SiTypescript
+  },
+
+  // Frontend Framework
+  {
+    skill: 'React',
+    icon: SiReact
+  },
+
+  // Backend
+  {
+    skill: 'Node.js',
+    icon: SiNodedotjs
+  },
+  {
+    skill: 'Express',
+    icon: SiExpress
+  },
+  {
+    skill: 'PHP',
+    icon: SiPhp
+  },
+
+  // Ferramentas Backend
+  {
+    skill: 'Prisma',
+    icon: SiPrisma
+  },
+  {
+    skill: 'Zod',
+    icon: SiZod
+  },
+
+  // Banco de Dados
+  {
+    skill: 'PostgreSQL',
+    icon: SiPostgresql
+  },
+  {
+    skill: 'MySQL',
+    icon: SiMysql
+  },
+
+  // Ferramentas
+  {
+    skill: 'Git',
+    icon: SiGit
+  },
+  {
+    skill: 'GitHub',
+    icon: SiGithub
   }
 ]

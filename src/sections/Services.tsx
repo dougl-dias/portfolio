@@ -1,4 +1,3 @@
-import Section from '../components/layouts/Section'
 import TitleSection from '../components/layouts/TitleSection'
 
 import Card from '../components/ui/Card'
@@ -7,7 +6,7 @@ import { services } from '../constants/services'
 
 const Services = () => {
   return (
-    <Section id='services'>
+    <div className='max-w-7xl mx-auto pt-20 px-4'>
       <TitleSection
         title='Meus'
         highlight='Serviços'
@@ -23,7 +22,7 @@ const Services = () => {
           </Card.Root>
         ))}
       </div>
-    </Section>
+    </div>
   )
 }
 

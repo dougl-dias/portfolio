@@ -138,3 +138,31 @@ body {
 .animation-delay-2500 {
   animation-delay: 2500ms;
 }
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.marquee-item {
+  min-width: 180px;
+  max-width: 180px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
