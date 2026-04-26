@@ -16,7 +16,7 @@ const Divider = ({ animated = false, delay = 500 }: DividerProps) => {
         <div
           className={twMerge(
             'absolute w-full h-full bg-purple-600 translate-x-full',
-            animated && `animate-pulseLeft animation-delay-${delay}`
+            animated && `line-draw-left animation-delay-${delay}`
           )}
         ></div>
       </div>
@@ -35,7 +35,7 @@ const Divider = ({ animated = false, delay = 500 }: DividerProps) => {
         <div
           className={twMerge(
             'absolute w-full h-full bg-purple-600 translate-x-full',
-            animated && `animate-pulseRight animation-delay-${delay}`
+            animated && `line-draw-right animation-delay-${delay}`
           )}
         ></div>
       </div>

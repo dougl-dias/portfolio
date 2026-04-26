@@ -17,8 +17,7 @@ import {
   SiPhp
 } from 'react-icons/si'
 
-export const tabs = [
-  // Frontend
+export const skills = [
   {
     skill: 'HTML5',
     icon: SiHtml5
@@ -35,8 +34,6 @@ export const tabs = [
     skill: 'TailwindCSS',
     icon: SiTailwindcss
   },
-
-  // Linguagens
   {
     skill: 'JavaScript',
     icon: SiJavascript
@@ -45,14 +42,10 @@ export const tabs = [
     skill: 'TypeScript',
     icon: SiTypescript
   },
-
-  // Frontend Framework
   {
     skill: 'React',
     icon: SiReact
   },
-
-  // Backend
   {
     skill: 'Node.js',
     icon: SiNodedotjs
@@ -65,8 +58,6 @@ export const tabs = [
     skill: 'PHP',
     icon: SiPhp
   },
-
-  // Ferramentas Backend
   {
     skill: 'Prisma',
     icon: SiPrisma
@@ -75,8 +66,6 @@ export const tabs = [
     skill: 'Zod',
     icon: SiZod
   },
-
-  // Banco de Dados
   {
     skill: 'PostgreSQL',
     icon: SiPostgresql
@@ -85,8 +74,6 @@ export const tabs = [
     skill: 'MySQL',
     icon: SiMysql
   },
-
-  // Ferramentas
   {
     skill: 'Git',
     icon: SiGit

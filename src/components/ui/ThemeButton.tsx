@@ -1,6 +1,6 @@
 import { useTheme } from '../../hooks/useTheme'
 
-import Button from '../ui/Button'
+import Button from './Button'
 
 const ThemeButton = () => {
   const { dropdown, themes, currentTheme, toggleDropdown, handleToggleTheme } = useTheme()

@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 
-import ThemeButton from './ThemeButton'
+import ThemeButton from '../ui/ThemeButton'
 import Navbar from './Navbar'
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState<boolean>(false)
   const [progressbar, setProgressbar] = useState<number>(0)
 
   const showThemeButton = useMediaQuery(640)
@@ -15,6 +16,7 @@ const Header = () => {
       const value = doc.scrollTop / (doc.scrollHeight - doc.clientHeight)
 
       setProgressbar(value)
+      setIsScrolled(doc.scrollTop > 80)
     }
     handleScroll()
 
@@ -27,7 +29,13 @@ const Header = () => {
 
   return (
     <>
-      <header className='fixed top-0 z-50 w-full py-2 px-3 bg-base/50 backdrop-blur-xl border-b border-default sm:backdrop-blur-xl'>
+      <header
+        className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+          isScrolled
+            ? 'py-2 px-6 bg-base/75 backdrop-blur-xl border-b border-default shadow-md sm:bg-base/50'
+            : 'bg-transparent border-transparent py-4 px-10'
+        }`}
+      >
         <div className='absolute top-0 left-0 w-full h-[3px] z-50'>
           <div
             className='w-full h-full bg-gradient-to-r from-violet-300 to-violet-800 rounded-full origin-left'
@@ -36,7 +44,7 @@ const Header = () => {
         </div>
 
         <div className='flex items-center justify-between max-w-7xl mx-auto'>
-          <a href='/' className='text-primary font-bold'>
+          <a href='/' className='text-primary font-bold  italic'>
             Dougl-Dias
           </a>
 
