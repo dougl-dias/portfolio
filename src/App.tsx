@@ -1,7 +1,10 @@
+import { Analytics } from '@vercel/analytics/react'
+
 import AppProvider from './contexts/AppProvider'
 
 import Home from './sections/Home'
 import Project from './sections/Project'
+import Services from './sections/Services'
 import Skills from './sections/Skills'
 import About from './sections/About'
 import CTA from './sections/CTA'
@@ -21,6 +24,7 @@ const App = () => {
         <main className='relative z-10 flex-1'>
           <Home />
           <Project />
+          <Services />
           <Skills />
           <About />
           <CTA />
@@ -28,6 +32,8 @@ const App = () => {
         </main>
 
         <Footer />
+
+        <Analytics />
       </div>
     </AppProvider>
   )

@@ -8,7 +8,7 @@ const InputMaskedControl = ({ ...props }) => {
   return (
     <IMaskInput
       id={id}
-      className='block w-full bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6'
+      className='block w-full bg-transparent py-1.5 pr-3 pl-1 text-base text-primary placeholder:text-muted focus:outline-none sm:text-sm/6'
       {...props}
     />
   )

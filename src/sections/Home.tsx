@@ -3,7 +3,7 @@ import { SiNodedotjs, SiPostgresql, SiReact, SiTypescript } from 'react-icons/si
 import AnimatedBackground from '../components/ui/AnimatedBackground'
 
 import Badge from '../components/ui/Badge'
-import Button from '../components/ui/Button'
+import { Button } from '../components/ui/Button'
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
           <p className='text-lg text-secondary leading-relaxed mb-8 md:text-xl'>
             Desenvolvedor Fullstack focado em <span className='text-primary font-bold underline'>sistemas web</span>.{' '}
             <br />
-            Crio aplicações modernas com foco em experiencia do usuário, escalabilidade e código bem estruturado.
+            Crio aplicações modernas com foco em experiência do usuário, escalabilidade e código bem estruturado.
           </p>
 
           <ul className='flex flex-wrap justify-center gap-3 mb-10'>

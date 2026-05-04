@@ -6,6 +6,8 @@ interface ProjectProps {
   title: string
   description: string
   techs: IconType[]
+  codeUrl: string
+  demoUrl: string
 }
 
 export const projects = [
@@ -13,18 +15,24 @@ export const projects = [
     title: 'Sistema de Gestão',
     description:
       'Aplicação completa para gerenciamento de clientes e pedidos, com autenticação, dashboard e controle de dados.',
-    techs: [SiReact, SiTypescript, SiNodedotjs, SiPostgresql]
+    techs: [SiReact, SiTypescript, SiNodedotjs, SiPostgresql],
+    codeUrl: 'https://github.com/dougl-dias?tab=repositories',
+    demoUrl: 'https://portfolio-chi-murex-78.vercel.app'
   },
   {
     title: 'Dashboard Analytics',
     description:
       'Dashboard interativo com gráficos e indicadores em tempo real, focado em performance e experiência do usuário.',
-    techs: [SiReact, SiTypescript]
+    techs: [SiReact, SiTypescript],
+    codeUrl: 'https://github.com/dougl-dias?tab=repositories',
+    demoUrl: 'https://portfolio-chi-murex-78.vercel.app'
   },
   {
     title: 'Sistema de Tarefas',
     description:
       'Aplicação para gerenciamento de tarefas com CRUD completo, organização por status e persistência de dados.',
-    techs: [SiReact, SiNodedotjs]
+    techs: [SiReact, SiNodedotjs],
+    codeUrl: 'https://github.com/dougl-dias?tab=repositories',
+    demoUrl: 'https://portfolio-chi-murex-78.vercel.app'
   }
 ] satisfies ProjectProps[]

@@ -1,12 +1,16 @@
 import Section from '../components/layouts/Section'
 import TitleSection from '../components/layouts/TitleSection'
 
+import { Button, ButtonLink } from '../components/ui/Button'
 import Card from '../components/ui/Card'
+import Divider from '../components/ui/Divider'
 
 import { projects } from '../constants/projects'
-import Services from './Services'
 
 const Projects = () => {
+  const handleShowProjects = () => {
+    alert('meus projetos')
+  }
   return (
     <Section id='projects'>
       <div className='absolute -top-80 left-0 z-10 w-full h-80 bg-gradient-to-t from-base'></div>
@@ -14,12 +18,12 @@ const Projects = () => {
       <TitleSection
         title='Projetos'
         highlight='em destaque'
-        description='Alguns projetos que desenvolvi com foco em performance, escalabilidade e experiência do usuário.'
+        description='Projetos que desenvolvi com foco em performance, escalabilidade e experiência do usuário.'
       />
 
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20'>
-        {projects.map(({ title, description, techs }, index) => (
-          <Card.Root key={index}>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 pb-20'>
+        {projects.map(({ title, description, techs, codeUrl, demoUrl }) => (
+          <Card.Root key={title}>
             <Card.Title>{title}</Card.Title>
             <Card.Description>{description}</Card.Description>
 
@@ -30,14 +34,22 @@ const Projects = () => {
             </div>
 
             <Card.Actions>
-              <Card.Action>Demo</Card.Action>
-              <Card.Action>Código</Card.Action>
+              <ButtonLink href={demoUrl} target='_blank' rel='noopener noreferrer' className='flex-1'>
+                Demo
+              </ButtonLink>
+              <ButtonLink href={codeUrl} target='_blank' rel='noopener noreferrer' className='flex-1'>
+                Código
+              </ButtonLink>
             </Card.Actions>
           </Card.Root>
         ))}
       </div>
 
-      <Services />
+      <Divider>
+        <Button className='text-nowrap' onClick={handleShowProjects}>
+          Ver mais projetos
+        </Button>
+      </Divider>
     </Section>
   )
 }

@@ -1,26 +1,13 @@
-import { tv } from 'tailwind-variants'
-
 import { links } from '../../constants/links'
 import { socialIcons } from '../../constants/footer'
-
-const socialIcon = tv({
-  base: 'w-10 h-10 inline-flex items-center justify-center rounded-xl border border-default text-secondary backdrop-blur-sm bg-card transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg focus-visible:outline-none focus-visible:scale-110 focus-visible:shadow-lg',
-  variants: {
-    type: {
-      instagram:
-        'hover:bg-violet-500/20 hover:border-violet-500 hover:text-violet-400 focus-visible:bg-violet-500/20 focus-visible:border-violet-500 focus-visible:text-violet-400',
-      linkedIn:
-        'hover:bg-sky-500/20 hover:border-sky-500 hover:text-sky-400 focus-visible:bg-sky-500/20 focus-visible:border-sky-500 focus-visible:text-sky-400',
-      github:
-        'hover:bg-zinc-500/20 hover:border-zinc-400 hover:text-white focus-visible:bg-zinc-500/20 focus-visible:border-zinc-400 focus-visible:text-white'
-    }
-  }
-})
+import { ButtonLink } from '../ui/Button'
 
 const Footer = () => {
+  const year = new Date().getFullYear()
+
   return (
-    <footer className='pt-12 pb-24 bg-base border-t border-default sm:pb-16'>
-      <div className='flex flex-col items-center p-4 gap-8'>
+    <footer className='pt-12 pb-24 px-4 bg-base border-t border sm:pb-16'>
+      <div className='flex flex-col items-center gap-8'>
         <h2 className='text-3xl font-bold text-primary'>Dougl-dias</h2>
 
         <ul className='flex flex-col items-center gap-2 sm:flex-row'>
@@ -43,15 +30,22 @@ const Footer = () => {
         <ul className='flex items-center gap-4'>
           {socialIcons.map(({ type, href, icon: Icon }) => (
             <li key={type}>
-              <a href={href} target='_blank' rel='noopener noreferrer' className={socialIcon({ type })}>
-                {<Icon />}
-              </a>
+              <ButtonLink
+                href={href}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='w-10 h-10 border-2 rounded-xl'
+                size='md'
+                hover='glow'
+                variant='outline'
+                icon={Icon}
+              />
             </li>
           ))}
         </ul>
 
         <p className='text-center text-secondary'>
-          © {new Date().getFullYear()} <span className='text-primary'>Douglas Dias</span>. All rights reserved.
+          © {year} <span className='text-primary'>Douglas Dias</span>. All rights reserved.
         </p>
       </div>
     </footer>

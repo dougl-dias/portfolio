@@ -14,7 +14,8 @@ import {
   SiCss,
   SiSass,
   SiMysql,
-  SiPhp
+  SiPhp,
+  SiPostman
 } from 'react-icons/si'
 
 export const skills = [
@@ -65,6 +66,10 @@ export const skills = [
   {
     skill: 'Zod',
     icon: SiZod
+  },
+  {
+    skill: 'Postman',
+    icon: SiPostman
   },
   {
     skill: 'PostgreSQL',

@@ -11,7 +11,7 @@ const InputControl = ({ className, ...props }: ComponentProps<'input'>) => {
     <input
       id={id}
       className={twMerge(
-        'block w-full bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6',
+        'block w-full bg-transparent py-1.5 pr-3 pl-1 text-base text-primary placeholder:text-muted focus:outline-none sm:text-sm/6',
         className
       )}
       {...props}

@@ -3,7 +3,7 @@ import type { IconType } from 'react-icons'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const iconStyles = tv({
-  base: 'flex items-center justify-center rounded-lg bg-zinc-800 mb-4 group-hover:bg-violet-500/10 transition',
+  base: 'flex items-center justify-center rounded-lg bg-elevated mb-4 group-hover:bg-violet-500/10 transition',
   variants: {
     size: {
       sm: 'p-2 text-lg',

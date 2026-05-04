@@ -10,7 +10,7 @@ interface InputIconProps {
 const InputIcon = ({ className, icon: Icon }: InputIconProps) => {
   return (
     Icon && (
-      <div className={twMerge('shrink-0 text-base text-gray-400 select-none sm:text-sm/6', className)}>
+      <div className={twMerge('shrink-0 text-base text-muted select-none sm:text-sm/6', className)}>
         <Icon size={20} />
       </div>
     )

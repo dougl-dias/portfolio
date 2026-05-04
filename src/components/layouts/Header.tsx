@@ -32,8 +32,8 @@ const Header = () => {
       <header
         className={`fixed top-0 z-50 w-full transition-all duration-300 ${
           isScrolled
-            ? 'py-2 px-6 bg-base/75 backdrop-blur-xl border-b border-default shadow-md sm:bg-base/50'
-            : 'bg-transparent border-transparent py-4 px-10'
+            ? 'py-2 bg-base/75 backdrop-blur-xl border-b shadow-md sm:bg-base/50'
+            : 'bg-transparent border-transparent py-4'
         }`}
       >
         <div className='absolute top-0 left-0 w-full h-[3px] z-50'>
@@ -43,7 +43,7 @@ const Header = () => {
           ></div>
         </div>
 
-        <div className='flex items-center justify-between max-w-7xl mx-auto'>
+        <div className='flex items-center justify-between max-w-7xl mx-auto px-4'>
           <a href='/' className='text-primary font-bold  italic'>
             Dougl-Dias
           </a>

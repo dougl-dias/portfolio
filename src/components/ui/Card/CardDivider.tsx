@@ -3,7 +3,7 @@ import type { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 const CardDivider = ({ className, ...props }: ComponentProps<'div'>) => {
-  return <div className={twMerge('h-[1px] w-full bg-zinc-800/60 mb-3', className)} {...props} />
+  return <div className={twMerge('h-[1px] w-full bg-elevated mb-3', className)} {...props} />
 }
 
 export default CardDivider

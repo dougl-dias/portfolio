@@ -11,7 +11,7 @@ const InputTextarea = ({ className, ...props }: ComponentProps<'textarea'>) => {
     <textarea
       id={id}
       className={twMerge(
-        'block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6',
+        'block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-primary placeholder:text-muted focus:outline-none sm:text-sm/6',
         className
       )}
       {...props}

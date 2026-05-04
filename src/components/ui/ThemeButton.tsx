@@ -1,6 +1,6 @@
 import { useTheme } from '../../hooks/useTheme'
 
-import Button from './Button'
+import { Button } from './Button'
 
 const ThemeButton = () => {
   const { dropdown, themes, currentTheme, toggleDropdown, handleToggleTheme } = useTheme()
@@ -10,7 +10,7 @@ const ThemeButton = () => {
       {currentTheme && <currentTheme.icon />}
 
       {dropdown && (
-        <div className='absolute top-8 right-0 z-10 mt-2 origin-top-right rounded-md bg-card border border-default'>
+        <div className='absolute top-8 right-0 z-10 mt-2 origin-top-right rounded-md bg-card border'>
           <ul className='py-1'>
             {themes.map(({ icon: Icon, text, value }) => (
               <li

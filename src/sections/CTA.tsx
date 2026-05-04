@@ -1,5 +1,5 @@
 import Section from '../components/layouts/Section'
-import Button from '../components/ui/Button'
+import { Button } from '../components/ui/Button'
 
 const CTA = () => {
   return (
@@ -8,7 +8,7 @@ const CTA = () => {
         <div className='relative z-10'>
           <h2 className='text-2xl md:text-4xl font-bold text-primary mb-4'>Vamos tirar sua ideia do papel?</h2>
 
-          <p className='text-zinc-400 mb-8 max-w-2xl mx-auto'>
+          <p className='text-secondary mb-8 max-w-2xl mx-auto'>
             Desenvolvo sistemas modernos, rápidos e escaláveis para ajudar seu negócio a crescer no digital.
           </p>
 

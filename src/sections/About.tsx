@@ -5,6 +5,7 @@ import Section from '../components/layouts/Section'
 import Card from '../components/ui/Card'
 
 import { certificates } from '../constants/about'
+import { FaArrowRight } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className='grid sm:grid-cols-2 gap-6'>
+        <div className='grid sm:grid-cols-2 gap-5'>
           <Card.Root>
             <Card.Icon icon={HiOutlineCodeBracket} className='mb-3' />
             <Card.Title>Código limpo</Card.Title>
@@ -66,10 +67,10 @@ const About = () => {
         <div className='relative'>
           <div className='absolute top-5 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-violet-500/40 to-transparent' />
 
-          <div className='flex gap-8 overflow-x-auto pb-6 pt-10 scrollbar-thin scrollbar-thumb-violet-500/30'>
+          <div className='flex gap-6 overflow-x-auto pb-6 pt-10'>
             {certificates.map((cert, index) => (
               <div key={index} className='relative min-w-[280px] group flex flex-col items-center snap-center'>
-                <div className='absolute -top-5 w-4 h-4 bg-violet-500 rounded-full border-4 border-background group-hover:scale-110 transition' />
+                <div className='absolute -top-5 w-4 h-4 bg-violet-500 rounded-full border-4 border-base group-hover:scale-110 transition' />
 
                 <div className='w-[2px] h-6 bg-violet-500/30 mb-3' />
 
@@ -79,7 +80,7 @@ const About = () => {
                       {cert.platform}
                     </span>
 
-                    <span className='text-[10px] text-zinc-500'>{cert.date}</span>
+                    <span className='text-[10px] text-muted'>{cert.date}</span>
                   </div>
 
                   <Card.Title className='text-lg leading-snug'>{cert.title}</Card.Title>
@@ -87,9 +88,12 @@ const About = () => {
                   <Card.Divider />
 
                   <div className='relative z-10 flex items-center justify-between'>
-                    <span className='text-xs text-zinc-400'>Certificado</span>
+                    <span className='text-xs text-secondary'>Certificado</span>
 
-                    <button className='text-xs text-violet-400 hover:text-violet-300 transition'>Ver →</button>
+                    <button className='group/button pt-1 pb-0.5 px-2 inline-flex items-center gap-1 text-xs text-violet-400 transition-all hover:text-violet-300'>
+                      Ver
+                      <FaArrowRight className='transition group-hover/button:translate-x-1' />
+                    </button>
                   </div>
                 </Card.Root>
               </div>
